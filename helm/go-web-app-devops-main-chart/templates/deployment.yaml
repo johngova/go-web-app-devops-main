@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-web-app-devops-main
-        image: govadoc/go-web-app-devops-main
+        image: govadoc/go-web-app-devops-main:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
